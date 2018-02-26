@@ -19,6 +19,7 @@ class Song
   end
   
   extend Memorable, Findable
+  include Paramable
   
 #  def self.reset_all
 #    @@songs.clear
