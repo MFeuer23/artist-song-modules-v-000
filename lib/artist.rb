@@ -20,6 +20,7 @@ class Artist
   end
 
   extend Memorable, Findable
+  include Paramable
   
 #  def self.reset_all
 #    self.all.clear
