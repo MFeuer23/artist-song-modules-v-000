@@ -1,6 +1,7 @@
 module Memorable
   def reset_all
-    all.clear
+    @@artists.clear
+    @@songs.clear
   end
 
   def count
