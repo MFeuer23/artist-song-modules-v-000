@@ -10,28 +10,12 @@ class Song
     @@songs << self
   end
 
-#  def self.find_by_name(name)
-#    @@songs.detect{|a| a.name == name}
-#  end
-
   def artist=(artist)
     @artist = artist
   end
   
   extend Memorable, Findable
   include Paramable
-  
-#  def self.reset_all
-#    @@songs.clear
-#  end
-
-#  def to_param
-#    name.downcase.gsub(' ', '-')
-#  end
-
-#  def self.count
-#    self.all.count
-#  end
 
   def self.all
     @@songs
