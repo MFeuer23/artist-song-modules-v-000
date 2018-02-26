@@ -4,6 +4,9 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
+  extend Memorable, Findable
+  include Paramable
+  
   @@songs = []
 
   def initialize
@@ -14,9 +17,6 @@ class Song
     @artist = artist
   end
   
-  extend Memorable, Findable
-  include Paramable
-
   def self.all
     @@songs
   end
